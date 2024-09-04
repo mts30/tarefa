@@ -1,0 +1,57 @@
+1)
+def sequencia_fibonacci(numero):
+    sequencia = [0, 1]
+    while sequencia[-1] < numero:
+        proximo_valor = sequencia[-1] + sequencia[-2]
+        sequencia.append(proximo_valor)
+    return sequencia
+
+
+def eh_fibonacci(numero):
+    sequencia = sequencia_fibonacci(numero)
+    if numero in sequencia:
+        return f'{numero} pertence a sequencia de fibonacci'
+    else:
+        return f'{numero} nao pertence a sequencia de fibonacci'
+
+
+numero_teste = int(input("Insira um número: "))
+res = eh_fibonacci(numero_teste)
+print(res)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+2) 
+def verifica_a(texto):
+    quantidade_de_a_maiusculo = texto.count('A')
+    quantidade_de_a_minusculo = texto.count('a')
+
+    if quantidade_de_a_maiusculo > 0 or quantidade_de_a_minusculo > 0:
+        return (f"A letra 'A' aparece {quantidade_de_a_maiusculo} vezes na frase\n"
+                f"A letra 'a' aparece {quantidade_de_a_minusculo} vezes na frase")
+    else:
+        return f"A letra 'a' (maiuscula ou minuscula) nao aparece na frase."
+
+
+texto_teste = input("Digite uma frase: ")
+res = verifica_a(texto_teste)
+print(res)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+3) 77
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+4) a) Números ímpares = 1, 3, 5, 7, logo, o próximo número da sequência é 9
+b) O próximo número é o dobro do anterior, logo, o próximo número da sequência é 128
+c) Um número ímpar é adicionado ao número anterior (0 + 1, 1 + 3, 4 + 5, 9 + 7, 16 + 11), logo, o próximo número da sequência é 49 (36 + 13)
+d) Números pares elevados à segunda potência (2², 4², 6², 8²), logo, 10² = 100
+e) O número atual da sequência é somado ao anterior, logo, 8 + 5 = 13
+f) 20
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+5) Acenderia o interruptor e verificaria em qual sala está a lâmpada que eu acendi.
+
+----------------------------------------------------------------------------------------------------------------------------------
